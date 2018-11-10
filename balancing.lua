@@ -94,7 +94,6 @@ myMod:register({
 				}
 			}
 		},
-		--[[
 		{
 			BuildingPart = "BUILDING_PART_MARKET_FOOD",
 			BuildingPartCost = {
@@ -106,10 +105,10 @@ myMod:register({
 				},
 				RessourcesNeeded = {
 					{ Resource = "WOOD", Quantity = 2 },
-					{ Resource = "WOOLEN_CLOTH", Quantity = 2 },
+					{ Resource = "STONE", Quantity = 2 },
 				}
 			}
-		},--]]
+		},
 		{
 			BuildingPart = "BUILDING_PART_FISHING_HUT",
 			BuildingPartCost = {
@@ -183,21 +182,20 @@ myMod:register({
 				}
 			}
 		},
-		--[[
 		{
 			BuildingPart = "BUILDING_PART_HOUSE_LVL1",
 			BuildingPartCost = {
 				BuildRightTaxes = {
-					{ Resource = "GOLD", Quantity = 1 }
+					{ Resource = "GOLD", Quantity = 0 }
 				},
 				UpkeepCost = {
-					{ Resource = "GOLD", Quantity = 1 }
+					{ Resource = "GOLD", Quantity = 0 }
 				},
 				RessourcesNeeded = {
-					{ Resource = "WOOD", Quantity = 1 }
+					{ Resource = "WOOD", Quantity = 4 }
 				}
 			}
-		}, --]]
+		},
 		{
 			BuildingPart = "BUILDING_PART_SHEEP_FARM",
 			BuildingPartCost = {
@@ -418,5 +416,6 @@ myMod:register({
 			{ Resource = "GOLD", Quantity = 50 }
 		}
 	},
-	TradingVillageList = "VILLAGE_LIST_DEFAULT"
+	TradingVillageList = "VILLAGE_LIST_DEFAULT",
+	InitialFamilyCount = 5,
 })
